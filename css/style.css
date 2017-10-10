@@ -17,10 +17,15 @@ body {
     font-weight: 500;
     line-height: 27px;
     padding-top: 31px;
+    padding-left: 50px;
 }
 
 .site-logo a {
     color: #fff;
+}
+
+.site-logo a:hover {
+    text-decoration: none;
 }
 
 .site-logo a img {
@@ -96,7 +101,7 @@ body {
 }
 
 .nav>li:last-child a {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -222,15 +227,6 @@ body {
     background-color: #2b8dd9;
 }
 
-
-/* .carousel-inner>.item>img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
-} */
-
 .carousel-control.right.control,
 .carousel-control.left.control {
     background-color: transparent;
@@ -245,6 +241,95 @@ body {
 
 .bold {
     font-weight: 600;
+}
+
+.features-part {
+    text-align: center;
+    padding: 82px 0 10px;
+    background-color: #f8f7f7;
+}
+
+.feature h1 {
+    line-height: 66px;
+    font-size: 44px;
+    margin: 0;
+}
+
+.box {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        position: relative;
+    }
+    .box.move {
+        top: 90px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        margin-bottom: 50px;
+    }
+}
+
+.icon {
+    background-color: #fff;
+    border: 1px solid #6f6f6f;
+    border-radius: 100%;
+    color: #203e5b;
+    width: 111px;
+    height: 111px;
+    font-size: 48px;
+    line-height: 99px;
+    display: inline-block;
+    transition: .3s linear;
+    transition-property: border-color, background-color, color;
+    padding: 6px;
+    position: absolute;
+    top: -51px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box:hover .icon {
+    border-color: #2b8dd9;
+    background-color: #2b8dd9;
+    color: #fff;
+    background-clip: content-box;
+}
+
+.our-feature {
+    padding: 80px 0 10px;
+    margin: 0 auto;
+}
+
+.our-feature h5 {
+    color: #1f3542;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 14px;
+    margin-bottom: 28px;
+    transition: .3s linear;
+    transition-property: color;
+}
+
+.box:hover .our-feature h5 {
+    color: #2b8dd9;
+}
+
+.our-feature p {
+    color: #6c6b6b;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.feature-img {
+    display: block;
+    margin: 0 auto;
 }
 
 .offers-part {
