@@ -342,12 +342,53 @@ body {
     text-align: center;
     background: url(../images/more-features-bg.png) no-repeat center -20px;
     background-size: cover;
-    padding-bottom: 120px;
+    padding: 82px 0 120px;
 }
 
 @media screen and (max-width: 767px) {
     .more-features-part {
         background: none;
+    }
+}
+
+.col-text {
+    position: relative;
+    top: 110px;
+}
+
+.pic-right {
+    float: right;
+}
+
+.f-box {
+    padding: 0.1px 0 50px;
+}
+
+.f-box-move-l {
+    position: relative;
+    right: 35px;
+}
+
+.f-box-move-r {
+    position: relative;
+    left: 35px;
+}
+
+@media screen and (max-width: 1199px) {
+    .f-box-move-l {
+        right: 0
+    }
+    .f-box-move-r {
+        left: 0;
+    }
+    .col-text {
+        top: 70px;
+    }
+    .pic-right {
+        float: none;
+    }
+    .more-features-part {
+        margin: 0 auto;
     }
 }
 
@@ -375,6 +416,25 @@ body {
 
 .pic-desc {
     padding-bottom: 50px;
+    width: 260px;
+}
+
+@media screen and (max-width: 991px) {
+    .pic-desc {
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pic-desc {
+        width: 194px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .pic-desc {
+        width: 197px;
+    }
 }
 
 .pic-desc h5 {
