@@ -385,7 +385,7 @@ body {
         top: 70px;
     }
     .pic-right {
-        float: none;
+        float: initial;
     }
     .more-features-part {
         margin: 0 auto;
@@ -407,6 +407,12 @@ body {
     padding: 6px;
 }
 
+@media screen and (max-width: 991px) {
+    .pic {
+        margin-bottom: 25px;
+    }
+}
+
 .f-box:hover .pic {
     border-color: #2b8dd9;
     background-color: #2b8dd9;
@@ -421,13 +427,7 @@ body {
 
 @media screen and (max-width: 991px) {
     .pic-desc {
-        width: 490px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .pic-desc {
-        width: 194px;
+        width: auto;
     }
 }
 
@@ -452,9 +452,23 @@ body {
     text-align: right;
 }
 
+@media screen and (max-width: 991px) {
+    .pic-desc-right h5,
+    .pic-desc-right p {
+        text-align: center;
+    }
+}
+
 .pic-desc-left h5,
 .pic-desc-left p {
     text-align: left;
+}
+
+@media screen and (max-width: 991px) {
+    .pic-desc-left h5,
+    .pic-desc-left p {
+        text-align: center;
+    }
 }
 
 .f-box:hover .pic-desc h5 {
@@ -475,6 +489,12 @@ body {
 
 .heading-pic {
     margin-bottom: 120px;
+}
+
+@media screen and (max-width: 991px) {
+    .heading-pic {
+        margin-bottom: 60px;
+    }
 }
 
 .column {
