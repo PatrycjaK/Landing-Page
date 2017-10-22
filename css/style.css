@@ -384,15 +384,67 @@ body {
     .col-text {
         top: 70px;
     }
-    .pic-right {
-        float: initial;
-    }
     .more-features-part {
         margin: 0 auto;
     }
 }
 
-.pic {
+.f-box-container {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 120px;
+    margin-bottom: 50px;
+}
+
+.f-box-container-right {
+    position: relative;
+    padding-right: 40px;
+    padding-left: 120px;
+    margin-bottom: 50px;
+}
+
+.f-box-container h5,
+.f-box-container-right h5 {
+    color: #1f3542;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 5px 0 15px;
+    transition: .3s linear;
+    transition-property: color;
+}
+
+.f-box-text {
+    text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+    .more-features-part {
+        background: none;
+    }
+    .f-box-container {
+        padding-right: 40px;
+        padding-left: 120px;
+        margin-bottom: 50px;
+    }
+    .f-box-container,
+    .f-box-container-right {
+        max-width: 400px;
+        margin: 0 auto 50px;
+    }
+    .f-box-text {
+        text-align: left;
+    }
+}
+
+.f-box-text-right {
+    text-align: left;
+}
+
+.f-box-image {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #fff;
     border: 1px solid #6f6f6f;
     border-radius: 100%;
@@ -408,77 +460,45 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    .pic {
-        margin-bottom: 25px;
+    .f-box-image {
+        left: 0;
     }
 }
 
-.f-box:hover .pic {
+.f-box-image-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #6f6f6f;
+    border-radius: 100%;
+    color: #203e5b;
+    width: 96px;
+    height: 96px;
+    font-size: 48px;
+    line-height: 84px;
+    display: inline-block;
+    transition: .3s linear;
+    transition-property: border-color, background-color, color;
+    padding: 6px;
+}
+
+.f-box-image i,
+.f-box-image-right i {
+    position: relative;
+}
+
+.f-box-container:hover .f-box-image,
+.f-box-container-right:hover .f-box-image-right {
     border-color: #2b8dd9;
     background-color: #2b8dd9;
     color: #fff;
     background-clip: content-box;
 }
 
-.pic-desc {
-    padding-bottom: 50px;
-    width: 260px;
-}
-
-@media screen and (max-width: 991px) {
-    .pic-desc {
-        width: auto;
-    }
-}
-
-@media (max-width:1199px) and (min-width:992px) {
-    .pic-desc {
-        width: 197px;
-    }
-}
-
-.pic-desc h5 {
-    color: #1f3542;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    margin: 5px 0 15px;
-    transition: .3s linear;
-    transition-property: color;
-}
-
-.pic-desc-right h5,
-.pic-desc-right p {
-    text-align: right;
-}
-
-@media screen and (max-width: 991px) {
-    .pic-desc-right h5,
-    .pic-desc-right p {
-        text-align: center;
-    }
-}
-
-.pic-desc-left h5,
-.pic-desc-left p {
-    text-align: left;
-}
-
-@media screen and (max-width: 991px) {
-    .pic-desc-left h5,
-    .pic-desc-left p {
-        text-align: center;
-    }
-}
-
-.f-box:hover .pic-desc h5 {
+.f-box-container:hover .f-box-text h5,
+.f-box-container-right:hover .f-box-text-right h5 {
     color: #2b8dd9;
-}
-
-.pic-desc p {
-    color: #6c6b6b;
-    font-size: 13px;
-    line-height: 26px;
 }
 
 .offers-part {
